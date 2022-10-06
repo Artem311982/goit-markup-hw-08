@@ -5,13 +5,16 @@
     color: var(--other-color-wight);
 
     &__box {
-        display: flex;
-        align-items: baseline;
+        text-align: center;
+
+        // display: block;
+        // justify-content: center;
+        // align-items: baseline;
 
     }
 
     &__box-address {
-        margin-right: 70px;
+        // margin-right: 70px;
     }
 
     &__par-address .link {
@@ -37,6 +40,7 @@
 
     &__address {
         font-style: normal;
+        margin-bottom: 60px;
     }
 
     &__address .footer__par-address {
@@ -52,6 +56,7 @@
 
     &__box-social {
         align-items: baseline;
+        margin-bottom: 60px;
     }
 
     &__par-social {
@@ -105,9 +110,9 @@
     }
 
     &__form-box {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
+        // display: flex;
+        // flex-direction: column;
+        // margin-left: auto;
     }
 
     &__form-par {
@@ -130,22 +135,25 @@
     }
 
     &__form {
-        width: 570px;
-        height: 86px;
+        // width: 570px;
+        // height: 86px;
         color: var(--other-color-wight);
     }
 
     &__form-block {
-        display: flex;
+        // display: flex;
+        // flex-direction: column;
         position: relative;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
     }
 
     &__form-input {
         width: 358px;
         height: 50px;
         padding-left: 10px;
-        margin-right: 12px;
+        
+        margin-bottom: 20px;
 
         color: var(--btn-bg-cl);
 
@@ -171,9 +179,9 @@
     }
 
     &__form-button {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        // position: absolute;
+        // right: 0;
+        // bottom: 0;
         width: 200px;
         height: 50px;
 
@@ -189,15 +197,14 @@
         padding-left: 28px;
         letter-spacing: 0.06em;
 
-
         color: currentColor;
     }
 
     &__form-icon {
         display: inline-block;
         position: absolute;
-        top: 13px;
-        right: 32px;
+        bottom: 13px;
+        right: 155px;
 
         fill: currentColor;
     }
@@ -205,9 +212,15 @@
 
 .footer__logo {
     display: block;
+    font-family: 'Raleway';
     text-decoration: none;
-    color: var(--other-color-wight);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
     margin-bottom: 20px;
+
+    color: var(--other-color-wight);
 
     &__logo-txt {
         color: var(--blue-txt-logo);
