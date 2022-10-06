@@ -1,0 +1,204 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--other-bg-cl);
+    color: var(--other-color-wight);
+
+    &__box {
+        display: flex;
+        align-items: baseline;
+
+    }
+
+    &__box-address {
+        margin-right: 70px;
+    }
+
+    &__par-address .link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+
+        letter-spacing: 0.03em;
+
+        color: var(--other-color-wight);
+    }
+
+        &__link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__address {
+        font-style: normal;
+    }
+
+    &__address .footer__par-address {
+        font-style: normal;
+        margin-bottom: 9px;
+    }
+
+    &__list-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__box-social {
+        align-items: baseline;
+    }
+
+    &__par-social {
+        display: block;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+        color: var(--other-color-wight);
+    }
+
+    &__link-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        color: var(--other-color-wight);
+        background-color: rgba(255, 255, 255, 0.1);
+
+        border-radius: 50%;
+
+        transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+    }
+
+    &__social-icons {
+        fill: currentColor;
+    }
+
+    &__link-icons:hover,
+    &__link-icons:active {
+        color: var(--other-color-wight);
+        background-color: var(--hover-icon);
+        transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+    }
+
+    &__list &__list-item {
+        margin-bottom: 9px;
+    }
+
+    &__list &__list-item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__form-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    &__form-par {
+        display: block;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+        color: var(--other-color-wight);
+    }
+
+    &__logo-txt {
+        color: var(--blue-txt-logo);
+    }
+
+    &__form {
+        width: 570px;
+        height: 86px;
+        color: var(--other-color-wight);
+    }
+
+    &__form-block {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    &__form-input {
+        width: 358px;
+        height: 50px;
+        padding-left: 10px;
+        margin-right: 12px;
+
+        color: var(--btn-bg-cl);
+
+        background-color: var(--other-bg-cl);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+
+    &__form-input::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 16px;
+
+        align-items: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__form-block:focus-within &__form-input {
+        transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__form-button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        height: 50px;
+
+        background-color: var(--accent-bg-cl);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        text-align: left;
+        padding-left: 28px;
+        letter-spacing: 0.06em;
+
+
+        color: currentColor;
+    }
+
+    &__form-icon {
+        display: inline-block;
+        position: absolute;
+        top: 13px;
+        right: 32px;
+
+        fill: currentColor;
+    }
+}

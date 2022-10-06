@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--main-txt-cl);
+
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-txt-cl);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.current {
+    color: var(--accent-bg-cl);
+}
+
