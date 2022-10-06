@@ -1,12 +1,16 @@
+// adaptive-layout(s)
+@import './adaptive-layout-s/benefits';
+@import './adaptive-layout-s/our-team';
+
 // untils
 @import './utils/vars';
 @import './utils/visually-hidden';
 
 // components
-@import './components/btn';
-@import './components/forms';
-@import './components/logo';
-@import './components/footer';
+// @import './components/btn';
+// @import './components/forms';
+// @import './components/logo';
+// @import './components/footer';
 
 // base
 @import './base/reset';
@@ -14,10 +18,10 @@
 @import './base/contaner';
 
 // layouts
-@import './layouts/header';
-@import './layouts/studio-hero';
-@import './layouts/portfolio-projects';
-@import './layouts/benefits';
-@import './layouts/our-projects';
-@import './layouts/our-team';
-@import './layouts/customers';
+// @import './layouts/header';
+// @import './layouts/studio-hero';
+// @import './layouts/portfolio-projects';
+// @import './layouts/benefits';
+// @import './layouts/our-projects';
+// @import './layouts/our-team';
+// @import './layouts/customers';
