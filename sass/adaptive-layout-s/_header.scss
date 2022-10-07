@@ -1,6 +1,6 @@
 .header {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     background-color: var(--other-color-wight);
     font-weight: 500;
     line-height: calc(16 / 14);
@@ -11,10 +11,8 @@
     color: var(--main-txt-cl);
 
     &__list {
-        display: flex;
+        // display: flex;
         position: relative;
-
-
     }
 
     &__list .list-item {
@@ -33,17 +31,30 @@
     }
 
     &__nav {
-        display: flex;
-        align-items: center;
+        position: relative;
+        display: block;
+        // align-items: center;
+    }
+
+    &__button-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        transform: position (-50% -50%);
+    }
+
+    &__button-svg {
+        position: absolute;
     }
 }
 
 .group {
-    display: flex;
-    margin-left: auto;
+    // display: flex;
+    // margin-left: auto;
 
     &>&__link {
-        display: flex;
+        // display: flex;
         text-decoration: none;
         font-style: normal;
         font-weight: 500;
@@ -60,7 +71,7 @@
     }
 
     &__link {
-        display: flex;
+        // display: flex;
         width: 161px;
         height: 16px;
         text-decoration: none;
@@ -77,7 +88,7 @@
 
     &__link-icon {
         fill: currentColor;
-        margin-right: 10px;
+        // margin-right: 10px;
     }
 }
 
