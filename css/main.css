@@ -82,7 +82,7 @@
 .our-team {
   background: var(--btn-bg-cl);
 }
-.our-team .our-team__icons {
+.our-team__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.our-team .our-team__socile-link {
+.our-team__socile-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,14 +111,13 @@
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
 }
-.our-team .our-team__socile-link:hover,
-.our-team .our-team__socile-link:focus {
+.our-team__socile-link:hover, .our-team__socile-link:focus {
   color: var(--other-color-wight);
   background-color: var(--hover-icon);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team .our-team__svg {
+.our-team__svg {
   fill: currentColor;
 }
 
@@ -141,6 +140,25 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .third-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .third-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 .third-list__box {
   padding-top: 30px;
@@ -177,6 +195,18 @@
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .list-shadow {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-shadow {
+    width: 270px;
+    height: 428px;
+  }
 }
 
 .customers__title {
