@@ -23,9 +23,9 @@
         background-color: transparent;
         z-index: 3;
 
-        @media screen and (min-width: 768px) {
-            display: none;            
-        }
+            @media screen and (min-width: 768px) {
+                display: none;            
+            }
     }
 
     &__button-menu &__icon-dagger:hover {
@@ -53,9 +53,7 @@
 }
 
 .mobile-menu {  
-    background-color: var(--other-color-wight);
-
-    
+    background-color: var(--other-color-wight); 
 
         @media screen and (max-width: 767px) {
             padding-top: 48px;
@@ -115,6 +113,7 @@
                 display: none;
             }
         }
+
 }
 
 .navigation { 
@@ -158,6 +157,7 @@
         }
 
         @media screen and (min-width: 768px) {
+            
             &__list {
                 flex-direction: row;
                 position: relative;
@@ -171,6 +171,15 @@
                 display: block;
                 padding-top: 32px;
                 padding-bottom: 32px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-right: 315px;
+            
+            &__list &__item:last-child {
+                margin-right: 0;
             }
         }
 }
@@ -251,6 +260,27 @@
                 color: var(--par-txt-cl);
             }
         }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            align-items: center;
+            margin-right: auto;
+
+            &>&__link {
+                font-size: 14px;
+                line-height: calc(16 / 14);
+            }
+            
+            & &__link+&__link {
+                margin-left: 30px;
+            }
+
+            &__link {
+                display: flex;
+                width: 161px;
+                height: 16px;
+            }
+        }
 }
 
 .logo {
@@ -259,7 +289,7 @@
     font-size: 26px;
     font-weight: 700;
     line-height: calc(31 / 26);
-    margin-right: 87px;
+    margin-right: 92px;
 
     letter-spacing: 0.03em;
 
@@ -269,8 +299,14 @@
         color: var(--blue-txt-logo);
     }
 
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+
     @media screen and (min-width: 1200px) {
-        margin-right: 93px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 

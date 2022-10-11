@@ -1,7 +1,4 @@
 .first-list {
-    // display: flex;
-    // gap: 30px;
-
     &__item {
         margin-bottom: 30px;
     }
@@ -14,7 +11,31 @@
         background-position: center;
         background-color: var(--btn-bg-cl);
         border-radius: 4px;
+        margin-right: 15px;
         margin-bottom: 30px;
+        margin-left: 15px;
+    }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+}
+
+.first-list__item {
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin: 15px;
     }
 }
 
